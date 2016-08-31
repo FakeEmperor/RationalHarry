@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-
+#include <gsl/gsl>
 
 enum DBAccessProviderRights
 {
@@ -16,10 +16,4 @@ class DBAccessProvider
 	virtual bool Connected() = 0;
 	virtual bool Disconnect() = 0;
 	virtual DBAccessProviderRights GetRights() = 0;
-};
-
-class GruffApi
-{
-	virtual void Insert(const DBAccessProvider&, const  ) = 0;
-
 };
